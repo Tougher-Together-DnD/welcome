@@ -1,0 +1,131 @@
+<!-- 
+@todo Set document root or use uri function to resolve paths.
+@todo possibly use generic javascript router on another layer to resolve paths.
+ -->
+<index>
+<notes> Implements changeTheme, and changeLanguage methods. noteMakerForm implements addFieldset, removeFieldset, addFilename, removeFilename, addURL, generateNotes, generateNotes, copyToClipboard. quickSearchForm implements performFilter, resetFilter. </notes>
+<head>
+<title>SeGov Data Transfer Aid</title>
+<metas>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="author" content="Clinton Mulligan"/>
+<meta name="description" content="This SeGOV Aid pulls data from MOVEit, links to additional resources, and provides a form to create documentation. The Aid assists in locating Data Exchanges Analyst are seeking."/>
+<meta name="keywords" content="segov, moveit, aid, msu, data transfer, "/>
+</metas>
+<insert name="revertReport" type="code"/>
+</head>
+<body>
+<methods data-library="coreMethodStore.displayMethods">["changeTheme", "changeLanguage"]</methods>
+<nav>
+<div name="internal">
+<link href="#mainContent">
+<var id="A0x0D702C84">skip to main content</var>
+</link>
+<link href="#">
+<var id="A0x05F72A75">goto top of page</var>
+</link>
+<link href="#prdAnchor">
+PRD
+<var id="A0x0A2ABF03">transfers</var>
+</link>
+<link href="#satAnchor">
+SAT
+<var id="A0x0A2ABF03">transfers</var>
+</link>
+<link href="#noteMakerAnchor">
+<var id="A0x0631B5FD">note maker form</var>
+</link>
+<link href="#copyright">
+<var id="A0x0905B2A5">bottom of page</var>
+</link>
+</div>
+<div name="external">
+<link href="\\dhs\share\OA\BIS\DTE\ENS\TADU\SecureFTP\DPW_MoveIt_Home_Page\DPW MoveIt Home Page.htm">
+<var id="A0x0E499C04">SeGov cheat sheet</var>
+</link>
+</div>
+<div name="settings">
+<themes>
+<theme name="default">
+<var id="A0x0ABC8C74">Default</var>
+</theme>
+<theme name="dark">
+<var id="A0x08CB581E">Dark</var>
+</theme>
+</themes>
+<languages>
+<language lang="en-US">American English</language>
+<language lang="es-MX">
+Espa
+<![CDATA[ &#241; ]]>
+ol Mexicano
+</language>
+</languages>
+</div>
+</nav>
+<header name="titleBar">
+<insert name="quickSearchForm" type="fragment"/>
+<para name="titleText">
+<var id="A0x0E0ACDE4">SeGov data transfer aid</var>
+</para>
+</header>
+<insert name="iconLegend" type="fragment"/>
+<main>
+<insert name="prdArticle" type="fragment"/>
+<insert name="satArticle" type="fragment"/>
+</main>
+<asides>
+<insert name="noteMakerForm" type="fragment"/>
+</asides>
+<footer>
+<section name="footerLogo">
+<insert name="agencyLogo" type="image"/>
+</section>
+<section name="emailContacts">
+<link href="mailto:cmulligan@pa.gov;%20meaker@pa.gov;%20jbaldwin@state.pa.us;%20ltyson@pa.gov;%20cpuzak@state.pa.us;%20gmorris@pa.gov;%20dclarke@pa.gov;%20nmedina@pa.gov;%20rifrank@state.pa.us;%20rziegler@state.pa.us;%20jermccullo@pa.gov;%20c-jcollins@pa.gov;%20c-cbannon@pa.gov;%20c-psiddam@pa.gov;%20c-srkakarl@pa.gov;%20c-fkiran@pa.gov;%20ropatel@pa.gov">
+<var id="A0x0BBE5E84">MSU team distribution list</var>
+</link>
+<link href="mailto:rdurham@pa.gov;jowagner@pa.gov;rifrank@pa.gov;nkalbarczy@pa.gov;cmulligan@pa.gov;">
+<var id="A0x0A92C51C">MOVEit / SeGOV team email</var>
+</link>
+</section>
+<section name="additionalInfo">
+<para>
+<var id="A0x00265F0E">coming soon...</var>
+</para>
+<para>
+<var id="A0x000F973E">to be determined.</var>
+</para>
+</section>
+</footer>
+<section name="copyrightInfo">
+<link href="https://www.pa.gov/accessibility-policy/">
+<var id="A0x081BA6A9">accessibility</var>
+</link>
+<link href="https://www.pa.gov/privacy-policy/">
+<var id="A0x056EA5D9">privacy</var>
+</link>
+<link href="https://www.pa.gov/security-policy/">
+<var id="A0x098A6BE9">security</var>
+</link>
+<para name="copyright">
+Copyright
+<![CDATA[ &#169; ]]>
+2019 Governor Tom Wolf - All Rights Reserved
+</para>
+</section>
+</body>
+<figures>
+<!--  fragments are included with the document() in xsl and relative to it's location.. todo above to resolve paths.  -->
+<code name="revertReport" src="\\dhs\share\OA\BIS\DTE\ENS\TADU\SeGOV\Tools\segov-transfer-aid\dist\structures\revert-report-code.html" href="revertReport" wrapper="body"/>
+<fragment name="quickSearchForm" src="\\dhs\share\OA\BIS\DTE\ENS\TADU\SeGOV\Tools\segov-transfer-aid\dist\structures\webpage-search-form.html" href="quickSearchForm" wrapper="body"/>
+<fragment name="iconLegend" src="\\dhs\share\OA\BIS\DTE\ENS\TADU\SeGOV\Tools\segov-transfer-aid\dist\structures\icon-legend-fragment.html" href="iconLegendAnchor" wrapper="body"/>
+<fragment name="prdArticle" src="\\dhs\share\OA\BIS\DTE\ENS\TADU\SeGOV\Tools\segov-transfer-aid\dist\structures\prd-article-fragment.html" href="prdAnchor" wrapper="body"/>
+<fragment name="satArticle" src="\\dhs\share\OA\BIS\DTE\ENS\TADU\SeGOV\Tools\segov-transfer-aid\dist\structures\sat-article-fragment.html" href="satAnchor" wrapper="body"/>
+<fragment name="noteMakerForm" src="\\dhs\share\OA\BIS\DTE\ENS\TADU\SeGOV\Tools\segov-transfer-aid\dist\structures\note-maker-form.html" href="noteMakerAnchor" wrapper="body"/>
+<!--  images are included by the src attribute of the IMG tag, they are relative to the output document  -->
+<image name="agencyLogo" src="./presentations/core-assets/images/branding/dhs-blue-background-logo.png">DHS logo, A whte siloutete on solid background. The outline is a keystone shape while the curved lines inside it look like a family close together.</image>
+</figures>
+</index>
